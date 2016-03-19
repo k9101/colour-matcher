@@ -1,2 +1,4 @@
 # colour-matcher
-An iOS app to find the average colour of an image (sourced form Flickr)
+This is an iOS app to allows users to search for an image on Flickr, generate it's average colour, and set that colour to the view's background image. The goal of the project was to attempt to simply recreate the iTunes album art view and learn a little bit about image processing.
+
+![alt tag](https://raw.githubusercontent.com/k9101/colour-matcher/master/sample.png)
