@@ -46,6 +46,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01D8E7821C9D0151003CB048 /* Flickr Service */ = {
+			isa = PBXGroup;
+			children = (
+				017C97391C9CFFC200D9295C /* FlickrService.swift */,
+				017C973A1C9CFFC200D9295C /* APIKey.swift */,
+			);
+			name = "Flickr Service";
+			sourceTree = "<group>";
+		};
+		01D8E7831C9D0161003CB048 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				017C973C1C9CFFC200D9295C /* UIImageAverageColour.swift */,
+				017C973D1C9CFFC200D9295C /* DictionaryAppendOperator.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		01DEBA471C9CFF280042354F = {
 			isa = PBXGroup;
 			children = (
@@ -65,15 +83,13 @@
 		01DEBA521C9CFF280042354F /* Colour Matcher */ = {
 			isa = PBXGroup;
 			children = (
+				01D8E7831C9D0161003CB048 /* Extensions */,
+				01D8E7821C9D0151003CB048 /* Flickr Service */,
 				017C97361C9CFFC200D9295C /* Images.xcassets */,
 				017C974A1C9CFFFE00D9295C /* Main.storyboard */,
 				017C974C1C9CFFFE00D9295C /* LaunchScreen.storyboard */,
 				017C97381C9CFFC200D9295C /* Info.plist */,
-				017C97391C9CFFC200D9295C /* FlickrService.swift */,
-				017C973A1C9CFFC200D9295C /* APIKey.swift */,
 				017C973B1C9CFFC200D9295C /* FlickrViewerViewController.swift */,
-				017C973C1C9CFFC200D9295C /* UIImageAverageColour.swift */,
-				017C973D1C9CFFC200D9295C /* DictionaryAppendOperator.swift */,
 				017C973E1C9CFFC200D9295C /* AppDelegate.swift */,
 				017C97341C9CFFB000D9295C /* Images.xcassets */,
 			);
