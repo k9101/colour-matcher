@@ -8,10 +8,10 @@ This is an iOS app to allows users to search for an image on Flickr, generate it
 
 # Usage
 Open with Xcode and create an APIKey.swift file with a static API_KEY class member, which contains your personal Flickr API key.
-'''Swift
+```Swift
 import Foundation
 
 class APIKey {
     static let API_KEY = "#####" // <-- Your API_KEY Here
 }
-'''
+```
