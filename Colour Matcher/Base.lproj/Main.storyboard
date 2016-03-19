@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ndw-f4-e7y">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="v8J-hs-itw">
+            <objects>
+                <navigationController id="ndw-f4-e7y" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JBt-pC-f38">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8WI-f3-SOf" kind="relationship" relationship="rootViewController" id="dGe-3h-tca"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dGT-Vs-V7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="942" y="171"/>
+        </scene>
+        <!--Flickr Viewer View Controller-->
+        <scene sceneID="mUk-yv-tm7">
+            <objects>
+                <viewController id="8WI-f3-SOf" customClass="FlickrViewerViewController" customModule="Colour_Matcher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PBk-o7-Kr6"/>
+                        <viewControllerLayoutGuide type="bottom" id="W0O-y0-tSz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n3d-wf-FMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="MU6-nA-IaG">
+                                <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yus-cO-WIy"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8WI-f3-SOf" id="tdK-zU-FWV"/>
+                                </connections>
+                            </searchBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MTC-4K-NAa">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MU6-nA-IaG" secondAttribute="trailing" id="03v-ke-MJI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MTC-4K-NAa" secondAttribute="trailing" constant="-20" id="5Qq-vC-AP3"/>
+                            <constraint firstItem="W0O-y0-tSz" firstAttribute="top" secondItem="MTC-4K-NAa" secondAttribute="bottom" id="5du-bQ-LnK"/>
+                            <constraint firstItem="MU6-nA-IaG" firstAttribute="leading" secondItem="n3d-wf-FMZ" secondAttribute="leadingMargin" constant="-20" id="Cc6-ik-nqQ"/>
+                            <constraint firstItem="MU6-nA-IaG" firstAttribute="top" secondItem="PBk-o7-Kr6" secondAttribute="bottom" id="Drf-7I-fzA"/>
+                            <constraint firstItem="MU6-nA-IaG" firstAttribute="top" secondItem="PBk-o7-Kr6" secondAttribute="bottom" id="FGi-NL-j6Z"/>
+                            <constraint firstItem="MTC-4K-NAa" firstAttribute="top" secondItem="MU6-nA-IaG" secondAttribute="bottom" id="LGs-mm-zm4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MU6-nA-IaG" secondAttribute="trailing" constant="-20" id="Lwj-JF-SRj"/>
+                            <constraint firstItem="W0O-y0-tSz" firstAttribute="top" secondItem="MTC-4K-NAa" secondAttribute="bottom" id="R3E-5V-xIm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MTC-4K-NAa" secondAttribute="trailing" constant="-20" id="UYO-be-4ww"/>
+                            <constraint firstItem="MTC-4K-NAa" firstAttribute="leading" secondItem="n3d-wf-FMZ" secondAttribute="leadingMargin" constant="-20" id="ZzW-bx-YTL"/>
+                            <constraint firstItem="MU6-nA-IaG" firstAttribute="leading" secondItem="n3d-wf-FMZ" secondAttribute="leading" id="cc3-5b-Xnr"/>
+                            <constraint firstItem="MU6-nA-IaG" firstAttribute="leading" secondItem="n3d-wf-FMZ" secondAttribute="leadingMargin" constant="-20" id="l8V-iW-WUu"/>
+                            <constraint firstItem="MTC-4K-NAa" firstAttribute="leading" secondItem="n3d-wf-FMZ" secondAttribute="leadingMargin" constant="-20" id="l9b-oj-svH"/>
+                            <constraint firstItem="MU6-nA-IaG" firstAttribute="top" secondItem="PBk-o7-Kr6" secondAttribute="bottom" id="sdd-wM-NMx"/>
+                            <constraint firstItem="MTC-4K-NAa" firstAttribute="top" secondItem="MU6-nA-IaG" secondAttribute="bottom" id="vCx-MN-AFm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="03v-ke-MJI"/>
+                                <exclude reference="Drf-7I-fzA"/>
+                                <exclude reference="FGi-NL-j6Z"/>
+                                <exclude reference="cc3-5b-Xnr"/>
+                                <exclude reference="l8V-iW-WUu"/>
+                                <exclude reference="5Qq-vC-AP3"/>
+                                <exclude reference="LGs-mm-zm4"/>
+                                <exclude reference="l9b-oj-svH"/>
+                                <exclude reference="R3E-5V-xIm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="cWs-ql-Yf3"/>
+                    <connections>
+                        <outlet property="flickrImage" destination="MTC-4K-NAa" id="odV-8Z-OmX"/>
+                        <outlet property="flickrSearchBar" destination="MU6-nA-IaG" id="2nk-wQ-Z4E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L9V-a9-729" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="171"/>
+        </scene>
+    </scenes>
+</document>
