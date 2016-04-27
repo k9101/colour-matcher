@@ -20,10 +20,13 @@ class FlickrViewerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        //Set up gesture recognizer
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FlickrViewerViewController.DismissKeyboard))
+        
         view.addGestureRecognizer(tap)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: "refresh")
+        //Init refresh button
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Refresh, target: self, action: #selector(FlickrViewerViewController.refresh))
         
         getImage(nil)
     }
@@ -36,10 +39,7 @@ class FlickrViewerViewController: UIViewController {
         getImage(searchText)
     }
     
-    
-    func getImage(searchText: String?){
-        let service = FlickrService()
-        
+    func showLoadingDialog() -> UIView {
         // Create Loading box
         let strLabel = UILabel(frame: CGRect(x: 50, y: 0, width: 200, height: 50))
         strLabel.text = "Fetching Photo"
@@ -55,6 +55,14 @@ class FlickrViewerViewController: UIViewController {
         
         messageFrame.addSubview(strLabel)
         view.addSubview(messageFrame)
+        
+        return messageFrame
+    }
+    
+    func getImage(searchText: String?){
+        let service = FlickrService()
+        
+        let messageFrame = showLoadingDialog()
         
         // build API params
         var params: [String:AnyObject]

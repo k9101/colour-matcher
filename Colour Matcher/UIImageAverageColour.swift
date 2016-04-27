@@ -10,6 +10,7 @@ import UIKit
 
 extension UIImage {
     
+    // Return the average color for an image
     func averageColor() -> UIColor {
         
         let rgba = UnsafeMutablePointer<CUnsignedChar>.alloc(4)

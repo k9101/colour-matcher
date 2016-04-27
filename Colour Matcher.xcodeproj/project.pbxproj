@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		017C97351C9CFFB000D9295C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017C97341C9CFFB000D9295C /* Images.xcassets */; };
-		017C97401C9CFFC200D9295C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 017C97361C9CFFC200D9295C /* Images.xcassets */; };
-		017C97421C9CFFC200D9295C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 017C97381C9CFFC200D9295C /* Info.plist */; };
 		017C97431C9CFFC200D9295C /* FlickrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C97391C9CFFC200D9295C /* FlickrService.swift */; };
 		017C97441C9CFFC200D9295C /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C973A1C9CFFC200D9295C /* APIKey.swift */; };
 		017C97451C9CFFC200D9295C /* FlickrViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 017C973B1C9CFFC200D9295C /* FlickrViewerViewController.swift */; };
@@ -123,7 +121,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Kris Penney";
 				TargetAttributes = {
 					01DEBA4F1C9CFF280042354F = {
@@ -155,9 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				017C97421C9CFFC200D9295C /* Info.plist in Resources */,
 				017C97351C9CFFB000D9295C /* Images.xcassets in Resources */,
-				017C97401C9CFFC200D9295C /* Images.xcassets in Resources */,
 				017C974F1C9CFFFE00D9295C /* LaunchScreen.storyboard in Resources */,
 				017C974E1C9CFFFE00D9295C /* Main.storyboard in Resources */,
 			);
